@@ -32,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
     private List<MyTask> allTask;
     private DBHelper taskDatabase;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
