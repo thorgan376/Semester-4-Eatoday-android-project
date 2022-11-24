@@ -22,6 +22,7 @@ import hoangthaison.aprotrain.com.adapters.NoteAdapter;
 import hoangthaison.aprotrain.com.database.DBHelper;
 import hoangthaison.aprotrain.com.models.Note;
 import hoangthaison.aprotrain.com.databinding.AddNewNoteLayoutBinding;
+import hoangthaison.aprotrain.com.databinding.UpdatePreviousNoteLayoutBinding;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
         configView();
         configListView();
+        addListener();
     }
 
     @Override
@@ -117,4 +119,31 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    private void addListener() {
+        lvNotes.setOnItemClickListener((adapterView, view, i, l) -> {
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            UpdatePreviousNoteLayoutBinding binding = UpdatePreviousNoteLayoutBinding.inflate(getLayoutInflater());
+            builder.setView(binding.getRoot());
+
+            AlertDialog dialogUpdateNote = builder.create();
+            dialogUpdateNote.show();
+
+            binding.btnUpdate.setOnClickListener(view1 -> {
+
+                if(binding.edtUpdateNote.getText().toString().isEmpty()) {
+                    Toast.makeText(
+                            MainActivity.this,
+                            "Ghi chú không được bỏ trống",
+                            Toast.LENGTH_SHORT).show();
+                } else {
+                }
+
+                dialogUpdateNote.dismiss();
+            });
+
+            binding.btnUpdateCancel.setOnClickListener(view1 -> {
+                dialogUpdateNote.dismiss();
+            });
+        });
+    } //không có đủ thời gian, em xin dừng tại đây :((
 }
