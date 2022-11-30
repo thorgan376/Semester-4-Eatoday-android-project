@@ -145,5 +145,5 @@ public class MainActivity extends AppCompatActivity {
                 dialogUpdateNote.dismiss();
             });
         });
-    } //không có đủ thời gian, em xin dừng tại đây :((
+    }
 }
