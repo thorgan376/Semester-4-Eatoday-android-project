@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "395001119989",
+    "project_id": "eatoday-frontend",
+    "storage_bucket": "eatoday-frontend.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395001119989:android:834dafc8bb0fbb5301f1bc",
+        "android_client_info": {
+          "package_name": "eatoday.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "395001119989-ig9lg3h6p3n4h59pl7askob6sovvqcl8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFJUuatwXfK6RobtHc9AzMzEqPxWURDlk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "395001119989-ig9lg3h6p3n4h59pl7askob6sovvqcl8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
